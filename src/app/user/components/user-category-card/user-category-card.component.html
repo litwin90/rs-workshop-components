@@ -1,0 +1,5 @@
+<app-base-category-card
+    *ngIf="category"
+    [category]="category"
+    (click)="openCategory.emit(category.id)"
+></app-base-category-card>

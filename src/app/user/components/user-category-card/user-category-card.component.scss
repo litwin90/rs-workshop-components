@@ -1,0 +1,46 @@
+:host {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    @media (min-width: 480px) {
+        width: 50%;
+    }
+
+    @media (min-width: 1024px) {
+        width: 33.33%;
+    }
+}
+
+.mat-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    cursor: pointer;
+    margin: 10px;
+
+    &.inactive {
+        color: rgb(198, 184, 184);
+        background: repeating-linear-gradient(
+            45deg,
+            #f8f8f8,
+            #f8f8f8 10px,
+            #ecebebd2 10px,
+            #ecebebd2 20px
+        );
+    }
+
+    &:hover {
+        transition: all 0.2s ease-out;
+        top: -4px;
+    }
+}
+
+.mat-card-actions {
+    display: flex;
+
+    :last-child {
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,5 @@
+<app-user-category-card
+    *ngFor="let category of categories"
+    [category]="category"
+    (openCategory)="onOpenCategory($event)"
+></app-user-category-card>

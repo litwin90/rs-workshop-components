@@ -1,0 +1,9 @@
+<app-admin-category-card
+    *ngFor="let category of categories"
+    [category]="category"
+    (openCategory)="onOpenCategory($event)"
+    (editCategory)="onEditCategory($event)"
+    (deleteCategory)="onDeleteCategory($event)"
+    (activateCategory)="onActivateCategory($event)"
+    (deactivateCategory)="onDeactivateCategory($event)"
+></app-admin-category-card>

@@ -1,0 +1,44 @@
+<app-base-category-card
+    *ngIf="category"
+    [category]="category"
+    (click)="openCategory.emit(category.id)"
+>
+    <button
+        mat-icon-button
+        aria-label="Edit"
+        color="primary"
+        (click)="editCategory.emit(category.id)"
+        matTooltip="Edit"
+    >
+        <mat-icon>edit</mat-icon>
+    </button>
+    <button
+        *ngIf="!category.isActive"
+        mat-icon-button
+        aria-label="Activate"
+        color="accent"
+        (click)="activateCategory.emit(category.id)"
+        matTooltip="Activate"
+    >
+        <mat-icon>visibility</mat-icon>
+    </button>
+    <button
+        *ngIf="category.isActive"
+        mat-icon-button
+        aria-label="De Activate"
+        color="accent"
+        (click)="deactivateCategory.emit(category.id)"
+        matTooltip="De Activate"
+    >
+        <mat-icon><span class="material-icons">visibility_off</span></mat-icon>
+    </button>
+    <button
+        mat-icon-button
+        aria-label="Delete"
+        color="warn"
+        (click)="deleteCategory.emit(category.id)"
+        matTooltip="Delete"
+    >
+        <mat-icon>delete</mat-icon>
+    </button>
+</app-base-category-card>
