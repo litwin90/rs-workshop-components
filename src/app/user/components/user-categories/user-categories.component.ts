@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { WindowService } from 'src/app/shared/services/window.service';
 import { UserCategory } from '../../models/user-category';
 
 @Component({
@@ -10,11 +11,11 @@ import { UserCategory } from '../../models/user-category';
 export class UserCategoriesComponent implements OnInit {
     @Input() categories: UserCategory[] = [];
 
-    constructor() {}
+    constructor(private windowService: WindowService) {}
 
     ngOnInit(): void {}
 
     onOpenCategory(id: UserCategory['id']) {
-        console.log(id);
+        this.windowService.windowRef.alert(id);
     }
 }
