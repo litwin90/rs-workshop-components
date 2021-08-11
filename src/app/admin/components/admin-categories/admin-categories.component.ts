@@ -1,18 +1,16 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { AdminCategory } from '../../models/admin-category';
+import { CategoriesStateService } from '../../services/categories-state.service';
 
 @Component({
     selector: 'app-admin-categories',
     templateUrl: './admin-categories.component.html',
     styleUrls: ['./admin-categories.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AdminCategoriesComponent implements OnInit {
-    @Input() categories: AdminCategory[] = [];
-
-    constructor() {}
-
-    ngOnInit(): void {}
+export class AdminCategoriesComponent {
+    constructor(public categoriesState: CategoriesStateService) {
+        this.categoriesState.initData();
+    }
 
     onOpenCategory(id: AdminCategory['id']) {
         console.log(`Open: ${id}`);
@@ -23,6 +21,7 @@ export class AdminCategoriesComponent implements OnInit {
     }
     onDeleteCategory(id: AdminCategory['id']) {
         console.log(`Delete: ${id}`);
+        this.categoriesState.delete(id);
     }
     onActivateCategory(id: AdminCategory['id']) {
         console.log(`Activate: ${id}`);

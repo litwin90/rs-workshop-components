@@ -1,0 +1,52 @@
+{
+    "admin-categories": [
+        {
+            "id": "22222",
+            "name": "Computers",
+            "shortDescription": "Short description : faucibus euismod ullamcorper",
+            "imageUrl": "https://rukminim1.flixcart.com/image/416/416/kox8b680/allinone-desktop/n/e/s/entwinoallinonewithwificore2duo-entwino-original-imag39w4m8sthmgc.jpeg?q=70",
+            "imageAlt": "Photo of a Shiba Inu",
+            "isActive": true
+        },
+        {
+            "id": "33333",
+            "name": "Bikes",
+            "shortDescription": "Short description : faucibus euismod ullamcorper",
+            "imageUrl": "https://static.standard.co.uk/s3fs-public/thumbnails/image/2020/05/29/12/best-bikes-online.png?width=990&auto=webp&quality=75&crop=968%3A645%2Csmart",
+            "imageAlt": "Photo of a Shiba Inu",
+            "isActive": true
+        },
+        {
+            "id": "4444",
+            "name": "Cars",
+            "shortDescription": "Short description : faucibus euismod ullamcorper",
+            "imageUrl": "https://www.buycarsonline.in/images/Creta.jpg",
+            "imageAlt": "Photo of a Shiba Inu",
+            "isActive": true
+        },
+        {
+            "id": "55555",
+            "name": "Phones",
+            "shortDescription": "Short description : faucibus euismod ullamcorper",
+            "imageUrl": "https://teja10.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP851288988-1514455553.jpeg",
+            "imageAlt": "Photo of a Shiba Inu",
+            "isActive": true
+        },
+        {
+            "id": "666666666",
+            "name": "Computers",
+            "shortDescription": "Short description : faucibus euismod ullamcorper",
+            "imageUrl": "https://rukminim1.flixcart.com/image/416/416/kox8b680/allinone-desktop/n/e/s/entwinoallinonewithwificore2duo-entwino-original-imag39w4m8sthmgc.jpeg?q=70",
+            "imageAlt": "Photo of a Shiba Inu",
+            "isActive": true
+        },
+        {
+            "id": "777777",
+            "name": "Bikes",
+            "shortDescription": "Short description : faucibus euismod ullamcorper",
+            "imageUrl": "https://static.standard.co.uk/s3fs-public/thumbnails/image/2020/05/29/12/best-bikes-online.png?width=990&auto=webp&quality=75&crop=968%3A645%2Csmart",
+            "imageAlt": "Photo of a Shiba Inu",
+            "isActive": true
+        }
+    ]
+}

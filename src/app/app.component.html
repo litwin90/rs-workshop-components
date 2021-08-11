@@ -1,2 +1,6 @@
-<app-user-categories [categories]="userCategories"></app-user-categories>
-<!-- <app-admin-categories [categories]="adminCategories"></app-admin-categories> -->
+<mat-progress-bar
+    *ngIf="progressBar.isLoading$ | async"
+    mode="indeterminate"
+></mat-progress-bar>
+<!-- <app-user-categories [categories]="userCategories"></app-user-categories> -->
+<app-admin-categories></app-admin-categories>
